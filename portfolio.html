@@ -1,0 +1,2261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Beauty Kumari | Portfolio</title>
+
+    <style>
+
+        /* =====================================================
+           GENERAL
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #070b14;
+            color: #e5e7eb;
+            line-height: 1.6;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        header {
+            background: #050814;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.7);
+            border-bottom: 1px solid #1e293b;
+        }
+
+        nav {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 18px 0;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 28px;
+        }
+
+        .logo span {
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #cbd5e1;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+
+        /* =====================================================
+           HOME / HERO
+        ===================================================== */
+
+        .home {
+            min-height: 90vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 60px 5%;
+
+            background:
+                radial-gradient(circle at top left, #172554, transparent 35%),
+                radial-gradient(circle at bottom right, #082f49, transparent 35%),
+                #070b14;
+        }
+
+        .home-container {
+            width: 100%;
+            max-width: 1200px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 60px;
+        }
+
+        .home-content {
+            flex: 1;
+            max-width: 700px;
+        }
+
+        .welcome {
+            color: #38bdf8;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .home h1 {
+            font-size: 55px;
+            margin-bottom: 10px;
+            color: #f8fafc;
+        }
+
+        .home h1 span {
+            color: #38bdf8;
+        }
+
+        .home h2 {
+            font-size: 25px;
+            color: #cbd5e1;
+            margin-bottom: 20px;
+        }
+
+        .home p {
+            font-size: 18px;
+            color: #94a3b8;
+            margin-bottom: 30px;
+        }
+
+
+        /* =====================================================
+           TOP PHOTO
+        ===================================================== */
+
+        .home-photo {
+            flex: 0 0 330px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .home-photo img {
+            width: 310px;
+            height: 310px;
+
+            object-fit: cover;
+            border-radius: 50%;
+
+            border: 7px solid #0284c7;
+
+            box-shadow:
+                0 0 0 8px rgba(56, 189, 248, 0.08),
+                0 20px 50px rgba(0, 0, 0, 0.7);
+
+            transition: 0.4s;
+        }
+
+        .home-photo img:hover {
+            transform: scale(1.04);
+
+            box-shadow:
+                0 0 0 12px rgba(56, 189, 248, 0.08),
+                0 25px 60px rgba(0, 0, 0, 0.8);
+        }
+
+
+        /* =====================================================
+           BUTTONS
+        ===================================================== */
+
+        .home-buttons {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+
+            background: #0284c7;
+            color: white;
+
+            padding: 12px 25px;
+            border-radius: 8px;
+
+            text-decoration: none;
+            font-weight: bold;
+
+            border: none;
+            cursor: pointer;
+
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0369a1;
+            transform: translateY(-3px);
+        }
+
+        .secondary-btn {
+            background: #111827;
+            border: 1px solid #334155;
+        }
+
+        .secondary-btn:hover {
+            background: #1e293b;
+        }
+
+
+        /* =====================================================
+           SECTIONS
+        ===================================================== */
+
+        .section {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+
+            font-size: 36px;
+            margin-bottom: 50px;
+
+            color: #f8fafc;
+        }
+
+        .section-title::after {
+            content: "";
+
+            display: block;
+
+            width: 60px;
+            height: 4px;
+
+            background: #38bdf8;
+
+            margin: 10px auto;
+
+            border-radius: 10px;
+        }
+
+
+        /* =====================================================
+           ABOUT
+           PHOTO REMOVED FROM THIS SECTION
+        ===================================================== */
+
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            gap: 60px;
+        }
+
+        .about-text {
+            max-width: 950px;
+            margin: auto;
+        }
+
+        .about-text h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #38bdf8;
+        }
+
+        .about-text p {
+            margin-bottom: 15px;
+            color: #94a3b8;
+            font-size: 16px;
+        }
+
+
+        /* =====================================================
+           SKILLS
+        ===================================================== */
+
+        .skills-section {
+            max-width: none;
+
+            padding-left: 5%;
+            padding-right: 5%;
+
+            background: #0b1120;
+        }
+
+        .skills-container {
+            max-width: 1200px;
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns: repeat(5, 1fr);
+
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: #111827;
+
+            padding: 25px;
+
+            border-radius: 12px;
+
+            text-align: center;
+
+            border: 1px solid #263449;
+
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-8px);
+
+            border-color: #0284c7;
+
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .skill-card h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .skill-card p {
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+
+        /* =====================================================
+           PROJECTS
+        ===================================================== */
+
+        .projects-container {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .project-card {
+            background: #0f172a;
+
+            border-radius: 12px;
+
+            overflow: hidden;
+
+            border: 1px solid #263449;
+
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+
+            border-color: #0284c7;
+
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+        }
+
+        .project-image {
+            height: 180px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: linear-gradient(
+                135deg,
+                #082f49,
+                #172554
+            );
+
+            overflow: hidden;
+        }
+
+        .project-icon img {
+            width: 100%;
+            height: 180px;
+
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 25px;
+        }
+
+        .project-content h3 {
+            margin-bottom: 10px;
+            color: #f8fafc;
+        }
+
+        .project-content p {
+            color: #94a3b8;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .project-content span {
+            display: inline-block;
+
+            background: #082f49;
+            color: #38bdf8;
+
+            padding: 5px 10px;
+
+            border-radius: 5px;
+
+            margin: 3px;
+
+            font-size: 12px;
+        }
+
+
+        /* =====================================================
+           ACHIEVEMENTS
+        ===================================================== */
+
+        .achievements-section {
+            background: #0b1120;
+
+            max-width: none;
+
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        .achievements-container {
+            max-width: 1100px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 20px;
+        }
+
+        .achievement-card {
+            background: #111827;
+
+            padding: 25px;
+
+            border-radius: 12px;
+
+            border-left: 5px solid #0284c7;
+
+            border-top: 1px solid #263449;
+            border-right: 1px solid #263449;
+            border-bottom: 1px solid #263449;
+
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+
+            transition: 0.3s;
+        }
+
+        .achievement-card:hover {
+            transform: translateY(-5px);
+
+            border-left-color: #38bdf8;
+
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .achievement-card h3 {
+            color: #38bdf8;
+            margin-bottom: 8px;
+        }
+
+        .achievement-card p {
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+
+        .achievement-year {
+            display: inline-block;
+
+            margin-top: 12px;
+
+            background: #082f49;
+            color: #38bdf8;
+
+            padding: 5px 10px;
+
+            border-radius: 5px;
+
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .achievement-year a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+
+        /* =====================================================
+           RESUME MODAL
+        ===================================================== */
+
+        .resume-modal {
+            display: none;
+
+            position: fixed;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+
+            background: rgba(0, 0, 0, 0.92);
+
+            z-index: 9999;
+
+            overflow-y: auto;
+
+            padding: 30px 10px;
+        }
+
+        .resume-modal.active {
+            display: block;
+        }
+
+        .resume-container {
+            width: 850px;
+            max-width: 95%;
+
+            margin: auto;
+
+            background: #f8fafc;
+
+            padding: 45px;
+
+            color: #1e293b;
+
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+        }
+
+        .close-btn {
+            position: fixed;
+
+            top: 15px;
+            right: 25px;
+
+            background: white;
+            color: #111827;
+
+            border: none;
+
+            width: 40px;
+            height: 40px;
+
+            border-radius: 50%;
+
+            font-size: 20px;
+
+            cursor: pointer;
+
+            z-index: 10000;
+        }
+
+
+        /* =====================================================
+           RESUME HEADER
+        ===================================================== */
+
+        .resume-header {
+            text-align: center;
+
+            border-bottom: 3px solid #0284c7;
+
+            padding-bottom: 20px;
+
+            margin-bottom: 25px;
+        }
+
+        .resume-header h1 {
+            font-size: 36px;
+
+            color: #111827;
+
+            margin-bottom: 5px;
+        }
+
+        .resume-header h3 {
+            color: #0284c7;
+
+            margin-bottom: 10px;
+        }
+
+        .resume-header p {
+            font-size: 13px;
+
+            color: #475569;
+
+            margin: 5px 0;
+        }
+
+        .resume-header a {
+            color: #0369a1;
+        }
+
+
+        /* =====================================================
+           RESUME CONTENT
+        ===================================================== */
+
+        .resume-section-content {
+            margin-bottom: 25px;
+        }
+
+        .resume-section-content h2 {
+            font-size: 19px;
+
+            color: #0284c7;
+
+            border-bottom: 1px solid #cbd5e1;
+
+            padding-bottom: 5px;
+
+            margin-bottom: 10px;
+        }
+
+        .resume-section-content h3 {
+            font-size: 16px;
+
+            color: #111827;
+
+            margin: 10px 0 5px;
+        }
+
+        .resume-section-content p,
+        .resume-section-content li {
+            font-size: 14px;
+
+            color: #475569;
+        }
+
+        .resume-section-content ul {
+            margin-left: 20px;
+
+            margin-bottom: 15px;
+        }
+
+
+        /* =====================================================
+           RESUME SKILLS
+        ===================================================== */
+
+        .resume-skills {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 8px;
+        }
+
+        .resume-skills span {
+            background: #f0f9ff;
+
+            border-left: 4px solid #0284c7;
+
+            padding: 8px 10px;
+
+            font-size: 13px;
+        }
+
+
+        /* =====================================================
+           STRENGTHS
+        ===================================================== */
+
+        .strengths {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 8px;
+        }
+
+        .strengths span {
+            background: #e0f2fe;
+
+            color: #0369a1;
+
+            padding: 7px 12px;
+
+            border-radius: 5px;
+
+            font-size: 13px;
+        }
+
+
+        /* =====================================================
+           PRINT BUTTON
+        ===================================================== */
+
+        .print-resume {
+            text-align: center;
+
+            margin-top: 30px;
+        }
+
+        .print-resume button {
+            background: #111827;
+
+            color: white;
+
+            border: none;
+
+            padding: 12px 25px;
+
+            border-radius: 7px;
+
+            cursor: pointer;
+
+            font-weight: bold;
+
+            font-size: 14px;
+        }
+
+        .print-resume button:hover {
+            background: #374151;
+        }
+
+
+        /* =====================================================
+           CONTACT
+        ===================================================== */
+
+        .contact-section {
+            max-width: none;
+
+            padding-left: 5%;
+            padding-right: 5%;
+
+            background: #070b14;
+        }
+
+        .contact-container {
+            max-width: 1100px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 20px;
+        }
+
+        .contact-card {
+            background: #111827;
+
+            padding: 25px;
+
+            text-align: center;
+
+            border-radius: 12px;
+
+            border: 1px solid #263449;
+
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+
+            transition: 0.3s;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-7px);
+
+            border-color: #0284c7;
+        }
+
+        .contact-card h3 {
+            margin-bottom: 10px;
+
+            color: #38bdf8;
+        }
+
+        .contact-card img {
+            width: 100px;
+            height: 100px;
+
+            object-fit: cover;
+
+            border-radius: 15px;
+
+            margin-bottom: 10px;
+        }
+
+        .contact-card a {
+            color: #38bdf8;
+
+            text-decoration: none;
+
+            word-break: break-word;
+        }
+
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-card p {
+            color: #cbd5e1;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+            background: #050814;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 35px 20px;
+        }
+
+        footer h3 {
+            font-size: 24px;
+
+            margin-bottom: 8px;
+        }
+
+        footer p {
+            color: #94a3b8;
+
+            margin-bottom: 8px;
+        }
+
+        footer .copyright {
+            font-size: 13px;
+
+            margin-top: 15px;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE DESIGN
+        ===================================================== */
+
+        @media (max-width: 1000px) {
+
+            .home-container {
+                gap: 30px;
+            }
+
+            .home h1 {
+                font-size: 45px;
+            }
+
+            .home-photo {
+                flex-basis: 280px;
+            }
+
+            .home-photo img {
+                width: 270px;
+                height: 270px;
+            }
+
+            .skills-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .projects-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .achievements-container {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+
+        @media (max-width: 750px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+
+                justify-content: center;
+
+                gap: 12px;
+            }
+
+            .home {
+                padding-top: 50px;
+            }
+
+            .home-container {
+                flex-direction: column-reverse;
+
+                text-align: center;
+            }
+
+            .home-content {
+                max-width: 700px;
+            }
+
+            .home-photo {
+                flex-basis: auto;
+            }
+
+            .home-photo img {
+                width: 240px;
+                height: 240px;
+            }
+
+            .home-buttons {
+                justify-content: center;
+            }
+
+            .about-container {
+                text-align: center;
+            }
+
+            .about-text {
+                max-width: 100%;
+            }
+        }
+
+
+        @media (max-width: 600px) {
+
+            .home h1 {
+                font-size: 38px;
+            }
+
+            .home h2 {
+                font-size: 20px;
+            }
+
+            .home p {
+                font-size: 16px;
+            }
+
+            .skills-container,
+            .projects-container,
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .section-title {
+                font-size: 30px;
+            }
+
+            .home-buttons {
+                flex-direction: column;
+            }
+
+            .home-buttons .btn {
+                width: 220px;
+            }
+
+            .resume-container {
+                padding: 25px;
+            }
+
+            .resume-header h1 {
+                font-size: 28px;
+            }
+
+            .resume-skills {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        /* =====================================================
+           PRINT RESUME
+        ===================================================== */
+
+        @media print {
+
+            body > *:not(.resume-modal) {
+                display: none;
+            }
+
+            .resume-modal {
+                display: block;
+
+                position: absolute;
+
+                background: white;
+
+                padding: 0;
+
+                left: 0;
+                top: 0;
+
+                width: 100%;
+                height: auto;
+            }
+
+            .resume-container {
+                width: 100%;
+
+                max-width: 100%;
+
+                box-shadow: none;
+
+                margin: 0;
+            }
+
+            .close-btn,
+            .print-resume {
+                display: none;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+    ===================================================== -->
+
+    <header>
+
+        <nav>
+
+            <h2 class="logo">
+                Beauty<span>.</span>
+            </h2>
+
+            <ul>
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#achievements">Achievements</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =====================================================
+         HOME
+    ===================================================== -->
+
+    <section id="home" class="home">
+
+        <div class="home-container">
+
+
+            <div class="home-content">
+
+                <p class="welcome">
+                    WELCOME TO MY PORTFOLIO
+                </p>
+
+                <h1>
+                    Hi, I'm <span>Beauty Kumari</span>
+                </h1>
+
+                <h2>
+                    B.Tech CSE (IoT) Student
+                </h2>
+
+                <p>
+                    I am a passionate computer science student interested
+                    in programming, web development, IoT and emerging
+                    technologies.
+                </p>
+
+                <div class="home-buttons">
+
+                    <a href="#about" class="btn">
+                        Explore My Portfolio
+                    </a>
+
+                    <button
+                        onclick="openResume()"
+                        class="btn secondary-btn">
+                        View Resume
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 TOP PHOTO
+            ================================================= -->
+
+            <div class="home-photo">
+
+                <img
+                    src="c:\Users\Dell\OneDrive\Desktop\my image.png"
+                    alt="Beauty Kumari">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ABOUT
+         PHOTO REMOVED
+    ===================================================== -->
+
+    <section id="about" class="section">
+
+        <h2 class="section-title">
+            About Me
+        </h2>
+
+        <div class="about-container">
+
+            <div class="about-text">
+
+                <h3>
+                    Hello! I'm Beauty 👋
+                </h3>
+
+                <p>
+                    I am a second-year B.Tech student specializing in
+                    Computer Science and Engineering with Internet of
+                    Things (CSE-IoT).
+                </p>
+
+                <p>
+                    I am currently developing my programming and web
+                    development skills and exploring technologies such as
+                    IoT, Cloud Computing, Git & GitHub and databases.
+                </p>
+
+                <p>
+                    I enjoy learning new technologies, participating in
+                    technical events and building simple and useful
+                    projects while improving my problem-solving skills.
+                </p>
+
+                <p>
+                    I have participated in hackathons, quizzes and
+                    technical learning programs to gain practical exposure
+                    beyond academics.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SKILLS
+    ===================================================== -->
+
+    <section id="skills" class="section skills-section">
+
+        <h2 class="section-title">
+            My Skills
+        </h2>
+
+        <div class="skills-container">
+
+
+            <div class="skill-card">
+
+                <h3>
+                    C Programming
+                </h3>
+
+                <p>
+                    Programming fundamentals and problem solving.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>
+                    Python
+                </h3>
+
+                <p>
+                    Python programming and basic applications.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>
+                    HTML
+                </h3>
+
+                <p>
+                    Creating structured web pages.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>
+                    CSS
+                </h3>
+
+                <p>
+                    Designing attractive web interfaces.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>
+                    JavaScript
+                </h3>
+
+                <p>
+                    Client-side scripting and interactive websites.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PROJECTS
+    ===================================================== -->
+
+    <section id="projects" class="section">
+
+        <h2 class="section-title">
+            My Projects & Hackathons
+        </h2>
+
+        <div class="projects-container">
+
+
+            <!-- PROJECT 1 -->
+
+            <div class="project-card">
+
+                <div class="project-image">
+
+                    <div class="project-icon">
+
+                        <img
+                            src="portfolio.png"
+                            alt="Personal Portfolio">
+
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <h3>
+                        Personal Portfolio
+                    </h3>
+
+                    <p>
+                        A responsive personal portfolio website created
+                        using HTML, CSS and JavaScript to showcase my
+                        skills, projects, achievements and resume.
+                    </p>
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 2 -->
+
+            <div class="project-card">
+
+                <div class="project-image">
+
+                    <div class="project-icon">
+
+                        <img
+                            src="c:\Users\Dell\OneDrive\Desktop\certificates\girlshih.jpeg"
+                            alt="Autonomous Job Application Agent">
+
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <h3>
+                        Autonomous Job Application Agent
+                    </h3>
+
+                    <p>
+                        An academic/hackathon project concept focused on
+                        simplifying parts of the job application process
+                        using automation and AI-based ideas.
+                    </p>
+
+                    <span>AI</span>
+                    <span>Automation</span>
+                    <span>Flutter</span>
+                    <span>
+                        <a href="https://job-automation.pages.dev/">Website</a>
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 3 -->
+
+            <div class="project-card">
+
+                <div class="project-image">
+
+                    <div class="project-icon">
+
+                        <img
+                            src="c:\Users\Dell\OneDrive\Desktop\certificates\sih26.jpeg"
+                            alt="SIH 2026">
+
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <h3>
+                        Smart Automation – SIH 2026
+                    </h3>
+
+                    <p>
+                        Participated in Smart India Hackathon 2026 with
+                        Team Vertex. Worked on Problem Statement 26136:
+                        Startup friendly public procurement mechanism for
+                        identifying, piloting, procuring and scaling
+                        innovative startup solutions.
+                    </p>
+
+                    <span>SIH 2026</span>
+                    <span>Smart Automation</span>
+                    <span>Team Vertex</span>
+                    <span>
+                        <a href="https://sahyog-setu-ten.vercel.app/"> Website</a>
+                    </span>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 4 -->
+
+            <div class="project-card">
+
+                <div class="project-image">
+
+                    <div class="project-icon">
+
+                        <img
+                            src="c:\Users\Dell\OneDrive\Desktop\certificates\sih25.jpeg"
+                            alt="Civic Eye">
+
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <h3>
+                        Civic Eye
+                    </h3>
+
+                    <p>
+                        A civic issue reporting and awareness project
+                        developed during the previous year. The concept
+                        focuses on helping citizens report local issues
+                        and improve communication between citizens and
+                        responsible authorities.
+                    </p>
+
+                    <span>Civic Technology</span>
+                    <span>Web/App</span>
+                    <span>Social Impact</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ACHIEVEMENTS
+    ===================================================== -->
+
+    <section
+        id="achievements"
+        class="section achievements-section">
+
+        <h2 class="section-title">
+            Achievements & Learning
+        </h2>
+
+        <div class="achievements-container">
+
+
+            <div class="achievement-card">
+
+                <h3>
+                    🏆 Smart India Hackathon 2026
+                </h3>
+
+                <p>
+                    Participated in SIH 2026 as a member of
+                    <strong>Team Vertex</strong> under the
+                    <strong>Smart Automation</strong> theme.
+                    Worked on Problem Statement ID
+                    <strong>26136</strong>.
+                </p>
+
+                <span class="achievement-year">
+                    2026
+                </span>
+
+            </div>
+
+
+            <div class="achievement-card">
+
+                <h3>
+                    💰 National Financial Literacy Quiz
+                </h3>
+
+                <p>
+                    Participated in the
+                    <strong>National Financial Literacy Quiz</strong>
+                    in 2026, gaining awareness about financial literacy
+                    and responsible financial practices.
+                </p>
+
+                <span class="achievement-year">
+                    2026
+                </span>
+
+                <span class="achievement-year">
+
+                    <a href="c:\Users\Dell\OneDrive\Desktop\certificates\quiz certificate.pdf">
+                        Certificate
+                    </a>
+
+                </span>
+
+            </div>
+
+
+            <div class="achievement-card">
+
+                <h3>
+                    ☁️ Google Cloud Study Jam
+                </h3>
+
+                <p>
+                    Participated in
+                    <strong>Google Cloud Study Jam 2025</strong>
+                    to explore cloud computing concepts and gain
+                    hands-on learning exposure.
+                </p>
+
+                <span class="achievement-year">
+                    2025
+                </span>
+
+                <span class="achievement-year">
+
+                    <a href="c:\Users\Dell\OneDrive\Desktop\certificates\Google cloud.pdf">
+                        Certificate
+                    </a>
+
+                </span>
+
+            </div>
+
+
+            <div class="achievement-card">
+
+                <h3>
+                    🎓 Spoken Tutorial – IIT Bombay
+                </h3>
+
+                <p>
+                    Successfully completed the
+                    <strong>Spoken Tutorial Development program</strong>
+                    at IIT Bombay, gaining additional technical
+                    learning experience.
+                </p>
+
+                <span class="achievement-year">
+                    Completed
+                </span>
+
+                <span class="achievement-year">
+
+                    <a href="c:\Users\Dell\OneDrive\Desktop\certificates\spoken tutorial certificate.pdf">
+                        Certificate
+                    </a>
+
+                </span>
+
+            </div>
+
+
+            <div class="achievement-card">
+
+                <h3>
+                    👁️ Civic Eye Project
+                </h3>
+
+                <p>
+                    Participated in the previous year's
+                    <strong>Civic Eye</strong> project, focusing on
+                    civic issue reporting, awareness and technology
+                    for social impact.
+                </p>
+
+                <span class="achievement-year">
+                    Previous Year
+                </span>
+
+            </div>
+
+
+            <div class="achievement-card">
+
+                <h3>
+                    📚 Continuous Learning
+                </h3>
+
+                <p>
+                    Continuously developing skills in programming,
+                    web development, IoT, databases, Git & GitHub,
+                    cloud computing and emerging technologies.
+                </p>
+
+                <span class="achievement-year">
+                    Ongoing
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         COMPLETE RESUME MODAL
+    ===================================================== -->
+
+    <div id="resumeModal" class="resume-modal">
+
+        <div class="resume-container">
+
+
+            <button
+                onclick="closeResume()"
+                class="close-btn"
+                aria-label="Close Resume">
+
+                ✕
+
+            </button>
+
+
+            <!-- RESUME HEADER -->
+
+            <div class="resume-header">
+
+                <h1>
+                    BEAUTY KUMARI
+                </h1>
+
+                <h3>
+                    B.Tech CSE (IoT) Student
+                </h3>
+
+                <p>
+
+                    📧
+
+                    <a href="mailto:beautykumari4267@gmail.com">
+                        beautykumari4267@gmail.com
+                    </a>
+
+                    |
+
+                    📍 Bihar, India
+
+                </p>
+
+                <p>
+
+                    LinkedIn:
+
+                    <a
+                        href="https://www.linkedin.com/in/beauty-kumari-093292378"
+                        target="_blank">
+
+                        Beauty Kumari
+
+                    </a>
+
+                    |
+
+                    GitHub:
+
+                    <a
+                        href="https://github.com/beautykumari4267-source"
+                        target="_blank">
+
+                        beautykumari4267-source
+
+                    </a>
+
+                </p>
+
+            </div>
+
+
+            <!-- CAREER OBJECTIVE -->
+
+            <div class="resume-section-content">
+
+                <h2>
+                    Career Objective
+                </h2>
+
+                <p>
+                    Motivated second-year B.Tech student specializing in
+                    Computer Science and Engineering with Internet of
+                    Things (CSE-IoT). Interested in programming, web
+                    development, IoT and emerging technologies. Currently
+                    developing technical and problem-solving skills
+                    through academic learning, projects, hackathons and
+                    technical learning programs.
+                </p>
+
+            </div>
+
+
+            <!-- EDUCATION -->
+
+            <div class="resume-section-content">
+
+                <h2>
+                    Education
+                </h2>
+
+                <h3>
+                    B.Tech / B.E. – Computer Science & Engineering (IoT)
+                </h3>
+
+                <p>
+                    <strong>College:</strong>
+                    Bakhtiyarpur College Of Engineering
+                </p>
+
+                <p>
+                    <strong>University:</strong>
+                    Bihar Engineering University (BEU)
+                </p>
+
+                <p>
+                    <strong>Current Year:</strong>
+                    2nd Year
+                </p>
+
+                <p>
+                    <strong>Expected Graduation:</strong>
+                    2029
+                </p>
+
+            </div>
+
+
+            <!-- TECHNICAL SKILLS -->
+
+            <div class="resume-section-content">
+
+                <h2>
+                    Technical Skills
+                </h2>
+
+                <div class="resume-skills">
+
+                    <span>C Programming</span>
+                    <span>Python</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Git & GitHub</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECTS -->
+
+            <div class="resume-section-content">
+
+                <h2>
+                    Projects & Hackathons
+                </h2>
+
+
+                <h3>
+                    1. Smart India Hackathon 2026 – Team Vertex
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Participated in Smart India Hackathon 2026
+                        as a member of Team Vertex.
+                    </li>
+
+                    <li>
+                        Worked under the Smart Automation theme.
+                    </li>
+
+                    <li>
+                        Worked on Problem Statement ID 26136:
+                        Startup friendly public procurement mechanism.
+                    </li>
+
+                    <li>
+                        The problem focuses on identifying, piloting,
+                        procuring and scaling innovative startup
+                        solutions.
+                    </li>
+
+                </ul>
+
+
+                <h3>
+                    2. Autonomous Job Application Agent
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Academic/hackathon project concept.
+                    </li>
+
+                    <li>
+                        Focused on simplifying parts of the job
+                        application process.
+                    </li>
+
+                    <li>
+                        Explored automation and AI-based ideas.
+                    </li>
+
+                    <li>
+                        Prototype concept explored using Flutter
+                        and modern technology ideas.
+                    </li>
+
+                </ul>
+
+
+                <h3>
+                    3. Civic Eye
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Previous-year civic technology project.
+                    </li>
+
+                    <li>
+                        Focused on reporting civic issues and
+                        increasing public awareness.
+                    </li>
+
+                    <li>
+                        Explored technology-based approaches for
+                        improving communication between citizens
+                        and responsible authorities.
+                    </li>
+
+                </ul>
+
+
+                <h3>
+                    4. Personal Portfolio Website
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Created a responsive personal portfolio
+                        website using HTML, CSS and JavaScript.
+                    </li>
+
+                    <li>
+                        Added About, Skills, Projects,
+                        Achievements, Resume and Contact sections.
+                    </li>
+
+                    <li>
+                        Designed a professional dark-themed
+                        responsive interface.
+                    </li>
+
+                </ul>
+
+
+                <h3>
+                    5. IoT Learning Project
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Learning-based project focused on
+                        Internet of Things concepts.
+                    </li>
+
+                    <li>
+                        Explored connected devices,
+                        communication and data exchange concepts.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- ACHIEVEMENTS -->
+
+            <div class="resume-section-content">
+
+                <h2>
+                    Achievements & Participation
+                </h2>
+
+                <ul>
+
+                    <li>
+                        Participated in Smart India Hackathon 2026
+                        with Team Vertex.
+                    </li>
+
+                    <li>
+                        Worked on SIH Problem Statement ID 26136.
+                    </li>
+
+                    <li>
+                        Participated in National Financial Literacy
+                        Quiz 2026.
+                    </li>
+
+                    <li>
+                        Participated in Google Cloud Study Jam 2025.
+                    </li>
+
+                    <li>
+                        Completed Spoken Tutorial Development
+                        program at IIT Bombay.
+                    </li>
+
+                    <li>
+                        Participated in Civic Eye project activities.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- LEARNING -->
+
+            <div class="resume-section-content">
+
+                <h2>
+                    Learning & Development
+                </h2>
+
+                <p>
+                    Currently strengthening knowledge in programming,
+                    web development, JavaScript, IoT, databases,
+                    Git & GitHub, basic cloud computing and
+                    emerging technologies.
+                </p>
+
+            </div>
+
+
+            <!-- EXPERIENCE -->
+
+            <div class="resume-section-content">
+
+                <h2>
+                    Experience
+                </h2>
+
+                <p>
+                    Currently seeking opportunities to gain practical
+                    experience through projects, internships,
+                    hackathons and collaborative learning.
+                </p>
+
+            </div>
+
+
+            <!-- STRENGTHS -->
+
+            <div class="resume-section-content">
+
+                <h2>
+                    Strengths
+                </h2>
+
+                <div class="strengths">
+
+                    <span>Problem Solving</span>
+                    <span>Quick Learning</span>
+                    <span>Teamwork</span>
+                    <span>Creativity</span>
+                    <span>Communication</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- INTERESTS -->
+
+            <div class="resume-section-content">
+
+                <h2>
+                    Areas of Interest
+                </h2>
+
+                <p>
+                    Web Development • Programming • IoT •
+                    Emerging Technologies • Problem Solving
+                </p>
+
+            </div>
+
+
+            <!-- CAREER FOCUS -->
+
+            <div class="resume-section-content">
+
+                <h2>
+                    Career Focus
+                </h2>
+
+                <p>
+                    Building a strong foundation in computer science,
+                    gaining practical development experience and
+                    continuously learning new technologies to prepare
+                    for future software development and technology
+                    opportunities.
+                </p>
+
+            </div>
+
+
+            <!-- PRINT -->
+
+            <div class="print-resume">
+
+                <button onclick="window.print()">
+                    Print / Save as PDF
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         CONTACT
+    ===================================================== -->
+
+    <section
+        id="contact"
+        class="section contact-section">
+
+        <h2 class="section-title">
+            Contact Me
+        </h2>
+
+        <div class="contact-container">
+
+
+            <!-- EMAIL -->
+
+            <div class="contact-card">
+
+                <h3>
+                    📧
+                </h3>
+
+                <p>
+
+                    <a href="mailto:beautykumari4267@gmail.com">
+                        beautykumari4267@gmail.com
+                    </a>
+
+                </p>
+
+            </div>
+
+
+            <!-- PHONE -->
+
+            <div class="contact-card">
+
+                <h3>
+                    📱
+                </h3>
+
+                <p>
+                    9262229869
+                </p>
+
+            </div>
+
+
+            <!-- LINKEDIN -->
+
+            <div class="contact-card">
+
+                <h3>
+                    💼
+                </h3>
+
+                <p>
+
+                    <a
+                        href="https://www.linkedin.com/in/beauty-kumari-093292378"
+                        target="_blank">
+
+                        LinkedIn
+
+                    </a>
+
+                </p>
+
+            </div>
+
+
+            <!-- GITHUB -->
+
+            <div class="contact-card">
+
+                <h3>
+                    💻
+                </h3>
+
+                <p>
+
+                    <a
+                        href="https://github.com/beautykumari4267-source"
+                        target="_blank">
+
+                        GitHub
+
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FOOTER
+    ===================================================== -->
+
+    <footer>
+
+        <h3>
+            Beauty Kumari
+        </h3>
+
+        <p>
+            B.Tech CSE (IoT) Student | Aspiring Developer
+        </p>
+
+        <p class="copyright">
+            © 2026 Beauty Kumari. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ===================================================== -->
+
+    <script>
+
+        /* OPEN RESUME */
+
+        function openResume() {
+
+            document
+                .getElementById("resumeModal")
+                .classList.add("active");
+
+            document.body.style.overflow = "hidden";
+        }
+
+
+        /* CLOSE RESUME */
+
+        function closeResume() {
+
+            document
+                .getElementById("resumeModal")
+                .classList.remove("active");
+
+            document.body.style.overflow = "auto";
+        }
+
+
+        /* CLOSE WHEN CLICKING OUTSIDE RESUME */
+
+        document
+            .getElementById("resumeModal")
+            .addEventListener("click", function(event) {
+
+                if (event.target === this) {
+
+                    closeResume();
+
+                }
+
+            });
+
+
+        /* CLOSE USING ESCAPE KEY */
+
+        document.addEventListener("keydown", function(event) {
+
+            if (event.key === "Escape") {
+
+                closeResume();
+
+            }
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
